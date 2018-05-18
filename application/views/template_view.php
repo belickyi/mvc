@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="wrap header-middle">
-          <div class="header-middle__logo"><a href="index.html"><img src="images/logo.png" alt="Online print"></a></div>
+          <div class="header-middle__logo"><a href="/main"><img src="images/logo.png" alt="Online print"></a></div>
           <div class="header-middle__text">
             <p>Круглосуточная онлайн <br>типография</p>
           </div>
@@ -37,20 +37,20 @@
         </div>
         <div class="header-bottom">
           <ul class="wrap header-bottom__list">
-            <li><a href="aboutus.html">О нас</a></li>
-            <li><a href="calc.html">Онлайн калькулятор</a></li>
-            <li><a href="uslugi.html">Дополнительные услуги</a></li>
-            <li><a href="paydelevery.html">Оплата и доставка</a></li>
-            <li><a href="akcii.html">Акции</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-            <li><a href="textrebovania.html">Технические требования</a></li>
+            <li><a href="/aboutus">О нас</a></li>
+            <li><a href="/calc">Онлайн калькулятор</a></li>
+            <li><a href="/uslugi">Дополнительные услуги</a></li>
+            <li><a href="/paydelevery">Оплата и доставка</a></li>
+            <li><a href="/akcii">Акции</a></li>
+            <li><a href="/contacts">Контакты</a></li>
+            <li><a href="/textrebovania">Технические требования</a></li>
           </ul>
         </div>
       </div>
       <!-- content -->
-	  <div class="wrap content">
-		  <?php include 'application/views/'.$content_view; ?>
-	  </div>
+	    <div class="wrap content">
+		    <?php include 'application/views/'.$content_view; ?>
+	    </div>
       <!-- footer-->
       <div class="footer">
         <div class="wrap footer-wrap">
