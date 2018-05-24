@@ -16,41 +16,65 @@
       <div class="header">
         <div class="header-top">
           <div class="wrap header-top__list">
-            <ul>
-              <li><a href="#">Регистрация</a></li>
-              <li><a href="">Вход</a></li>
-              <li><a href="">Корзина</a></li>
-              <li><a href="">0</a></li>
-            </ul>
+            <div class="header-top__list-social"><a href="#"><img src="images/instagram.png" alt=""></a><a href="#"><img src="images/facebook.png" alt=""></a><a href="#"><img src="images/vk.png" alt=""></a><a href="#"><img src="images/whatsapp.png" alt=""></a></div>
+            <div class="header-top__list-enter"><a href="">Регистрация</a><a href="">Вход</a><a href="">Корзина</a><span>0</span></div>
           </div>
         </div>
         <div class="wrap header-middle">
-          <div class="header-middle__logo"><a href="/main"><img src="images/logo.png" alt="Online print"></a></div>
-          <div class="header-middle__text">
-            <p>Круглосуточная онлайн <br>типография</p>
+          <div class="header-middle__logo flex-column"><a href="index.html"><img src="images/logo.png" alt="Online print"></a><span>Полиграфический онлайн сервис</span></div>
+          <div class="header-middle__text flex-column"><a href=""><span>Нижний Новгород</span></a><span class="header-middle__text-description">Выберите свой город для <br>отображения актуальной стоимости</span></div>
+          <div class="header-middle__btn"><a class="btn btn-info" href="#open-modal">Заказ в 1 клик</a>
+            <div class="modal-window" id="open-modal">
+              <div><a class="modal-close" href="#modal-close" tittle="Close">Закрыть</a>
+                <div class="feedback">
+                  <form action="feedback">
+                    <label for="1">Ваш телефон</label>
+                    <input type="text" name="Tiraz" id="1">
+                    <label for="1">Ваш email</label>
+                    <input type="text" name="Tiraz" id="1">
+                    <label for="1">Дополнительня информация</label>
+                    <input type="text" name="Tiraz" id="1">
+                    <input class="btn btn-cta" type="submit" value="Отправить заказ">
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="header-middle__btn btn"><a href="#">Онлайн калькулятор</a></div>
-          <div class="header-middle__contacts">
-            <p class="header-middle__contacts-tel">+7 (831) 123-45-67</p><a href="#">заказать обратный звонок</a>
-            <p>время работы: круглосуточно</p>
-          </div>
+          <div class="header-middle__contacts flex-column"><span class="header-middle__contacts-tel">+ 7 (831) 123-45-67</span><a class="btn-link-orange" href="#">заказать обратный звонок</a><span>время работы: круглосуточно</span></div>
         </div>
         <div class="header-bottom">
-          <ul class="wrap header-bottom__list">
-            <li><a href="/aboutus">О нас</a></li>
-            <li><a href="/calc">Онлайн калькулятор</a></li>
-            <li><a href="/uslugi">Дополнительные услуги</a></li>
-            <li><a href="/paydelevery">Оплата и доставка</a></li>
-            <li><a href="/akcii">Акции</a></li>
-            <li><a href="/contacts">Контакты</a></li>
-            <li><a href="/textrebovania">Технические требования</a></li>
-          </ul>
+          <nav class="wrap">
+            <ul class="flex-row flex-space">
+              <li class="header-bottom__products"><a class="btn btn-link-dark" href="calc.html">Продукция и услуги</a>
+                <ul>
+                  <li><a href="">Пункт № 1</a></li>
+                  <li><a href="">Пункт № 2</a></li>
+                  <li><a href="">Пункт № 3</a></li>
+                  <li><a href="">Пункт № 4</a></li>
+                  <li><a href="">Пункт № 5</a></li>
+                  <li><a href="">Пункт № 6</a></li>
+                  <li><a href="">Пункт № 7</a></li>
+                  <li><a href="">Пункт № 8</a></li>
+                </ul>
+              </li>
+              <li><a class="btn btn-link-dark" href="/calc">Онлайн калькулятор</a></li>
+              <li><a class="btn btn-link-dark" href="">Проверка макета</a></li>
+              <li class="header-bottom__info"><a class="btn btn-link-dark" href="">Информация</a>
+                <ul>
+                  <li><a class="btn btn-link-dark" href="textrebovania.html">Технические требования</a></li>
+                  <li><a class="btn btn-link-dark" href="contacts.html">Контакты</a></li>
+                  <li><a class="btn btn-link-dark" href="akcii.html">Акции</a></li>
+                  <li><a class="btn btn-link-dark" href="paydelevery.html">Оплата и доставка</a></li>
+                  <li><a class="btn btn-link-dark" href="uslugi.html">Дополнительные услуги</a></li>
+                  <li><a class="btn btn-link-dark" href="aboutus.html">О нас</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
       <!-- content -->
-	    <div class="wrap content">
-		    <?php include 'application/views/'.$content_view; ?>
-	    </div>
+      <?php include 'application/views/'.$content_view; ?>
       <!-- footer-->
       <div class="footer">
         <div class="wrap footer-wrap">
