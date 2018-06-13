@@ -1,20 +1,14 @@
+//slider
+
 $(document).ready(function() {
 	//slider
-	$('.js-slider-otziv').slick({
+	$('.js-main-slider').slick({
 		dots: false, 
 		arrows: false, 
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		fade: true,
 		autoplay: true,
-		autoplaySpeed: 2000
-	});
-	$('.js-slider-klient').slick({
-		lazyLoad: 'ondemand',
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		autoplay: true,
-		arrows: false,
+		autoplaySpeed: 3500,
 	});
 
 	//scroll-link
@@ -26,3 +20,15 @@ $(document).ready(function() {
 		}, 700);
 	});
 });
+
+//signup
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
