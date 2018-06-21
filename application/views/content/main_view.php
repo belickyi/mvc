@@ -55,59 +55,59 @@
 <!--categories-->
 <div class="body__categories bgc-grey">
   <h1 class="title wrap">Категории</h1>
-  <div class="categories flex-space wrap flex-wrap">
-    <div class="categories__item border-shdw fadeInLeft animated wow"><img class="categories__img border-shdw" src="/images/categories/card.png" alt="card">
-      <div class="categories__text">
-        <Span class="categories__span">Визитки</Span>
-        <p class="categories__p flex-vertical">Создадим визитку бесплатно при заказе от 2000 штук!</p><a class="button button_view-action categories__btn" href="/card.html">Подробнее</a>
+  <div class="flex-space wrap flex-wrap">
+    <div class="card fadeInLeft animated wow body__marbot"><img class="card__img" src="/images/categories/card.png" alt="card">
+      <div class="card__text">
+        <Span class="card__span">Визитки</Span>
+        <p class="card__p flex-vertical">Создадим визитку бесплатно при заказе от 2000 штук!</p><a class="button button_view-info" href="/card.html">Подробнее</a>
       </div>
     </div>
-    <div class="categories__item border-shdw fadeInLeft animated wow"><img class="categories__img border-shdw" src="/images/categories/listovki.png" alt="listovki">
-      <div class="categories__text">
-        <Span class="categories__span">Листовки</Span>
-        <p class="categories__p flex-vertical">Создадим листовку бесплатно при заказе от 5000 штук!</p><a class="button button_view-action" href="/listovki.html">Подробнее</a>
+    <div class="card fadeInLeft animated wow body__marbot"><img class="card__img" src="/images/categories/listovki.png" alt="listovki">
+      <div class="card__text">
+        <Span class="card__span">Листовки</Span>
+        <p class="card__p flex-vertical">Создадим листовку бесплатно при заказе от 5000 штук!</p><a class="button button_view-info" href="/listovki.html">Подробнее</a>
       </div>
     </div>
-    <div class="categories__item border-shdw fadeInLeft animated wow"><img class="categories__img border-shdw" src="/images/categories/bukleti.png" alt="bukleti">
-      <div class="categories__text">
-        <Span class="categories__span">Буклеты</Span>
-        <p class="categories__p flex-vertical">Наша типография печатает все виды булетов.</p><a class="button button_view-action" href="/bukleti.html">Подробнее</a>
+    <div class="card fadeInLeft animated wow body__marbot"><img class="card__img" src="/images/categories/bukleti.png" alt="bukleti">
+      <div class="card__text">
+        <Span class="card__span">Буклеты</Span>
+        <p class="card__p flex-vertical">Наша типография печатает все виды булетов.</p><a class="button button_view-info" href="/bukleti.html">Подробнее</a>
       </div>
     </div>
-    <div class="categories__item border-shdw fadeInRight animated wow"><img class="categories__img border-shdw" src="/images/categories/plakat.png" alt="plakat">
-      <div class="categories__text">
-        <Span class="categories__span">Плакаты</Span>
-        <p class="categories__p flex-vertical">Мы печатаем плакаты в Нижнем Новгороде по самой низкой цене.</p><a class="button button_view-action" href="/plakat.html">Подробнее</a>
+    <div class="card fadeInRight animated wow body__marbot"><img class="card__img" src="/images/categories/plakat.png" alt="plakat">
+      <div class="card__text">
+        <Span class="card__span">Плакаты</Span>
+        <p class="card__p flex-vertical">Мы печатаем плакаты в Нижнем Новгороде по самой низкой цене.</p><a class="button button_view-info" href="/plakat.html">Подробнее</a>
       </div>
     </div>
-    <div class="categories__item border-shdw fadeInRight animated wow"><img class="categories__img border-shdw" src="/images/categories/broshura.png" alt="broshura">
-      <div class="categories__text">
-        <Span class="categories__span">Брошюры</Span>
-        <p class="categories__p flex-vertical">Печать брошюр в Нижнем Новгороде хорошего качества</p><a class="button button_view-action" href="/broshura.html">Подробнее</a>
+    <div class="card fadeInRight animated wow body__marbot"><img class="card__img" src="/images/categories/broshura.png" alt="broshura">
+      <div class="card__text">
+        <Span class="card__span">Брошюры</Span>
+        <p class="card__p flex-vertical">Печать брошюр в Нижнем Новгороде хорошего качества</p><a class="button button_view-info" href="/broshura.html">Подробнее</a>
       </div>
     </div>
-    <div class="categories__item border-shdw fadeInRight animated wow"><img class="categories__img border-shdw" src="/images/categories/books.png" alt="books">
-      <div class="categories__text">
-        <Span class="categories__span">Журналы</Span>
-        <p class="categories__p flex-vertical">Печать журналов в Нижнем Новгроде по низкой цене и с хорошим качеством.</p><a class="button button_view-action" href="/books.html">Подробнее</a>
+    <div class="card fadeInRight animated wow body__marbot"><img class="card__img" src="/images/categories/books.png" alt="books">
+      <div class="card__text">
+        <Span class="card__span">Журналы</Span>
+        <p class="card__p flex-vertical">Печать журналов в Нижнем Новгроде по низкой цене и с хорошим качеством.</p><a class="button button_view-info" href="/books.html">Подробнее</a>
       </div>
     </div>
-    <div class="categories__item border-shdw fadeInLeft animated wow"><img class="categories__img border-shdw" src="/images/categories/kalendar.png" alt="kalendar">
-      <div class="categories__text">
-        <Span class="categories__span">Календари</Span>
-        <p class="categories__p flex-vertical">Закажите печать квартальных календарей в Нижнем Новгороде у нас.</p><a class="button button_view-action" href="/kalendar.html">Подробнее</a>
+    <div class="card fadeInLeft animated wow body__marbot"><img class="card__img" src="/images/categories/kalendar.png" alt="kalendar">
+      <div class="card__text">
+        <Span class="card__span">Календари</Span>
+        <p class="card__p flex-vertical">Закажите печать квартальных календарей в Нижнем Новгороде у нас.</p><a class="button button_view-info" href="/kalendar.html">Подробнее</a>
       </div>
     </div>
-    <div class="categories__item border-shdw fadeInLeft animated wow"><img class="categories__img border-shdw" src="/images/categories/pechat.png" alt="pechat">
-      <div class="categories__text">
-        <Span class="categories__span">Изготовление печатей</Span>
-        <p class="categories__p flex-vertical">Изготовление печатей в Нижнем Новгороде по низкой цене.</p><a class="button button_view-action" href="/pechat.html">Подробнее</a>
+    <div class="card fadeInLeft animated wow body__marbot"><img class="card__img" src="/images/categories/pechat.png" alt="pechat">
+      <div class="card__text">
+        <Span class="card__span">Изготовление печатей</Span>
+        <p class="card__p flex-vertical">Изготовление печатей в Нижнем Новгороде по низкой цене.</p><a class="button button_view-info" href="/pechat.html">Подробнее</a>
       </div>
     </div>
-    <div class="categories__item border-shdw fadeInLeft animated wow"><img class="categories__img border-shdw" src="/images/categories/other.png" alt="other">
-      <div class="categories__text">
-        <Span class="categories__span">Другие виды продукции и услуги</Span>
-        <p class="categories__p flex-vertical">Мы всегда рады нашим клиентам и постоянно расширяем спектр производимых товаров</p><a class="button button_view-action" href="#">Подробнее</a>
+    <div class="card fadeInLeft animated wow body__marbot"><img class="card__img" src="/images/categories/other.png" alt="other">
+      <div class="card__text">
+        <Span class="card__span">Другие виды продукции и услуги</Span>
+        <p class="card__p flex-vertical">Мы всегда рады нашим клиентам и постоянно расширяем спектр производимых товаров</p><a class="button button_view-info" href="#">Подробнее</a>
       </div>
     </div>
   </div>
@@ -116,14 +116,14 @@
 <div class="body__calculator">
   <div class="calculator">
     <div class="wrap">
-      <h1 class="title">Калькулятор стоимости</h1>
-      <div class="calculator__container bounceInUp animated wow">
-        <div class="calculator__form flex-wrap flex-inline flex-evenly">
+      <h1 class="title-white">Калькулятор стоимости</h1>
+      <div class="calculator__container fadeInRight animated wow">
+        <form class="calculator__form flex-wrap flex-inline flex-evenly">
           <div class="calculator__left flex-column">
             <label class="calculator__label" for="n1">Тираж</label>
-            <input class="calculator__input" type="text" name="Tiraz" id="n1">
+            <input class="input" type="text" name="Tiraz" id="n1">
             <label class="calculator__label" for="format">Формат изделия</label>
-            <select class="calculator__select select" name="format" id="format">
+            <select class="select" name="format" id="format">
               <option value="29.1" selected>A1 (594*841мм)</option>
               <option value="22">A2 (420*594мм)</option>
               <option value="11">A3 (297*420мм)</option>
@@ -133,7 +133,7 @@
               <option value="2.1">Флаер (99*210мм)</option>
             </select>
             <label class="calculator__label" for="papper">Бумага</label>
-            <select class="calculator__select select" name="papper" id="papper">
+            <select class="select" name="papper" id="papper">
               <option value="1" selected>Офсетная 80г. (тонкая, как в принтере)</option>
               <option value="1.27">Мелованная 130г. (тонкая. как у листовок)</option>
               <option value="1.27">Мелованная 150г. (чуть толще)</option>
@@ -145,14 +145,14 @@
               <option value="1.78">Самоклейка 80г.</option>
             </select>
             <label class="calculator__label" for="color">Цветность</label>
-            <select class="calculator__select" name="color" id="color">
+            <select class="select" name="color" id="color">
               <option value="1" selected>1+0 (черно-белая, односторонняя)</option>
               <option value="1.5">1+1 (черно-белая, двусторонняя)</option>
               <option value="2.5">4+0 (цветная, односторонняя)</option>
               <option value="3">4+4 (цветная, двусторонняя)</option>
             </select>
             <label class="calculator__label" for="laminazia">Ламинация</label>
-            <select class="calculator__select" name="laminazia" id="laminazia">
+            <select class="select" name="laminazia" id="laminazia">
               <option value="1" selected>Нет</option>
               <option value="1.5">Глянцевая 30мк. (односторонняя)</option>
               <option value="1.7">Глянцевая 30мк. (двухсторонняя)</option>
@@ -164,7 +164,7 @@
           </div>
           <div class="calculator__right flex-column">
             <label class="calculator__label" for="Kruglenie">Кругление углов</label>
-            <select class="calculator__select" name="Kruglenie" id="Kruglenie">
+            <select class="select" name="Kruglenie" id="Kruglenie">
               <option value="0" selected>Нет</option>
               <option value="2">1 угол</option>
               <option value="4">2 угола</option>
@@ -172,7 +172,7 @@
               <option value="8">4 угола</option>
             </select>
             <label class="calculator__label" for="big">Биговка</label>
-            <select class="calculator__select" name="big" id="big">
+            <select class="select" name="big" id="big">
               <option value="1" selected>Нет</option>
               <option value="1.25">1 биг</option>
               <option value="1.5">2 бига</option>
@@ -180,7 +180,7 @@
               <option value="2">4 бига</option>
             </select>
             <label class="calculator__label" for="falz">Фальц</label>
-            <select class="calculator__select" name="falz" id="falz">
+            <select class="select" name="falz" id="falz">
               <option value="1" selected>Нет</option>
               <option value="1.25">1 фальц</option>
               <option value="1.5">2 фальца</option>
@@ -190,13 +190,38 @@
             <div class="calculator__price">
               <div class="calculator__span">Стоимость заказа <span class="calculator__rub" id="out">0</span> &#8381</div>
               <div class="flex-space">
-                <button class="button button_view-info calculator__btn" onclick="calculator()">Расчитать</button>
+                <div class="button calculator__btn button_view-white" onclick="calculator()">Расчитать</div>
                 <button class="button button_view-action calculator__btn">Оформить</button>
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
+  </div>
+</div>
+<!-- feedback-->
+<div class="bgc-grey">
+  <div class="feedback flex-space wrap gap-vertical flex-center fadeInLeft animated wow">
+    <form class="form column-4" action="">
+      <div class="form__header feedback__header">Связаться с нами</div>
+      <div class="form__footer">
+        <div class="flex-space">
+          <div class="flex-column column-3"><span class="form__error">Необходимо заполнить поле</span>
+            <label class="label" for="feedback_name">Ваше имя</label>
+            <input class="input feedback__width form__required" type="text" id="feedback_name">
+          </div>
+          <div class="flex-column column-3"><span class="form__error">Необходимо заполнить поле</span>
+            <label class="label" for="feedback_email">Ваш email</label>
+            <input class="input form__required" type="text" id="feedback_email">
+          </div>
+        </div>
+        <label class="label" for="feedback_subject">Тема обращения</label>
+        <input class="input" type="text" id="feedback_subject">
+        <label class="label" for="text" name="feedback_text">Текст</label>
+        <textarea class="input" type="text" id="feedback_text"></textarea>
+        <button class="button button_view-action form__submit">Отправить</button>
+      </div>
+    </form>
   </div>
 </div>

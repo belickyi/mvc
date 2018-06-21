@@ -28,13 +28,13 @@ https://github.com/Belickyi
   </head>
 	<body class="body">
 		<!--header-->
-    <?php include 'application/views/header.php';?>
+    <?php include 'application/views/blocks/header.php';?>
 		<!--content-->
     <div class="content">
-			<?php include 'application/views/'.$content_view; ?>
+			<?php include 'application/views/content/'.$content_view; ?>
 		</div>
 		<!-- footer-->
-		<?php include 'application/views/footer.php';?>
+		<?php include 'application/views/blocks/footer.php';?>
 		<!--scripts-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/main.js"></script>

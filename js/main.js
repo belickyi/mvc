@@ -21,14 +21,13 @@ $(document).ready(function() {
 	});
 });
 
-//signup
-
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+// URL - menu
+var str = window.location.toString();
+var pages = str.split('/');
+console.log(str);
+console.log(pages);
+if (pages[3] == '' || pages[3] == 'index.html' || pages[3] == 'main') {
+	document.getElementById('dropdown__active').style.display = "block";
+	document.getElementById('dropdown__active-button').style.backgroundColor = "#384248";
+	document.getElementById('dropdown__active-button').style.color = "#fff";
 }
