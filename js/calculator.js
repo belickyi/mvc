@@ -27,19 +27,3 @@ function calculator() {
     document.getElementById('out').innerHTML = result; //получаю элемент span по id
     // использую свойство innerHTML что бы вставить переменную между тэгом 
 }
-
-//calculator menu
-
-
-
-
-
-// jquery
-
-// $(function() {
-//     $('.calculator__submit').click(function(event) {
-//         event.preventDefault();
-//         var form = $(this).parents('form')[0];
-//         console.log(form);
-//     })
-// })

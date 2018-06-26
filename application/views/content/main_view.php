@@ -52,10 +52,14 @@
     </div>
   </div>
 </div>
+<!-- Testcard -->
+<div class="goods-list wrap"></div>
+<div class="mini-card"></div>
 <!--categories-->
 <div class="body__categories bgc-grey">
   <h1 class="title wrap">Категории</h1>
   <div class="flex-space wrap flex-wrap">
+    
     <div class="card fadeInLeft animated wow body__marbot"><img class="card__img" src="/images/categories/card.png" alt="card">
       <div class="card__text">
         <Span class="card__span">Визитки</Span>

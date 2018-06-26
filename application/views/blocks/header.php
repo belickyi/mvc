@@ -3,45 +3,48 @@
     <div class="wrap">
       <div class="headertop__social flex-space">
         <div class="social"><a class="social__link" href="#"><img class="social__pic" src="/images/vk.png" alt="vk"></a><a class="social__link" href="#"><img class="social__pic" src="/images/instagram.png" alt="instagram"></a><a class="social__link" href="#"><img class="social__pic" src="/images/facebook.png" alt="facebook"></a><a class="social__link" href="#"><img class="social__pic" src="/images/whatsapp.png" alt="whatsapp"></a></div>
-        <div class="headertop__enter"><a class="headertop__list cursor" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Регистрация</a>
+        <div class="headertop__enter">
+        <? if (empty($_SESSION['login']) or empty($_SESSION['id'])) { ?>
+          <a class="headertop__list cursor" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Регистрация</a>
           <!-- modal signup-->
           <div class="modal" id="id01">
             <div class="signup"><span class="modal__close" onclick="document.getElementById('id01').style.display='none'" title="Close Modal">&times</span>
-              <form class="form modal__content" action="" method='POST'>
+              <form class="form modal__content" action="main/signup" method='post'>
                 <div class="form__header signup__form-title">Регистрация</div>
                 <div class="form__footer">
-                  <div class="form-row flex-column"><span class="form__error">Необходимо заполнить поле</span>
-                    <label class="label" for="signup_email" name="login">Email</label>
-                    <input class="input form__required" type="text" id="signup_email">
+                  <div class="form-row flex-column">
+                    <label class="label" for="signup_email">login</label>
+                    <input class="input form__required" name='login' type="text" id="signup_email">
                   </div>
-                  <div class="form-row flex-column"><span class="form__error">Необходимо заполнить поле</span>
-                    <label class="label" for="psw" name="password">Пароль</label>
-                    <input class="input form__required" type="password" id="psw">
+                  <div class="form-row flex-column">
+                    <label class="label" for="psw">Пароль</label>
+                    <input class="input form__required" name='password' type="password" id="psw">
                   </div>
-                  <div class="form-row flex-column"><span class="form__error">Необходимо заполнить поле</span>
+                  <div class="form-row flex-column">
                     <label class="label" for="psw-repeat">Повторите пароль</label>
-                    <input class="input form__required" type="password" id="psw-repeat">
+                    <input class="input form__required" name='password' type="password" id="psw-repeat">
                   </div>
                   <div class="flex-center">
-                    <a href="/main/signup" class="button button_view-action form__submit">Зарегестрировать</a>
+                    <button class="button button_view-action form__submit">Зарегестрировать</button>
                   </div>
                 </div>
               </form>
             </div>
           </div>
-          <!-- modal enter--><a class="headertop__list cursor" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Вход    </a>
+          <!-- modal enter-->
+          <a class="headertop__list cursor" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Вход    </a>
           <div class="modal" id="id02">
             <div class="enter"><span class="modal__close" onclick="document.getElementById('id02').style.display='none'" title="Close Modal">&times</span>
-              <form class="form modal__content" action="/action_enter.php">
+              <form class="form modal__content" action="/main/enter" method='post'>
                 <div class="form__header enter__form-title">Вход</div>
                 <div class="form__footer">
-                  <div class="form-row flex-column"><span class="form__error">Необходимо заполнить поле</span>
+                  <div class="form-row flex-column">
                     <label class="label" for="enter_email">Введите ваш логин</label>
-                    <input class="input form__required" type="text" name="enter_email" required>
+                    <input class="input form__required" type="text" name='login' required>
                   </div>
-                  <div class="form-row flex-column"><span class="form__error">Необходимо заполнить поле</span>
+                  <div class="form-row flex-column">
                     <label class="label" for="psw">Введите ваш пароль</label>
-                    <input class="input form__required" type="password" name="psw" required>
+                    <input class="input form__required" type="password" name='password' required>
                   </div>
                   <div class="flex-center">
                     <button class="button button_view-action form__submit modal_btn" type="submit">Войти</button>
@@ -49,7 +52,17 @@
                 </div>
               </form>
             </div>
-          </div><a class="headertop__list" href="/basket">Корзина</a><a class="headertop__list headertop__list-view_orange" href="#">1</a>
+          </div>
+          <a class="headertop__list" href="/bascet.html">Корзина</a>
+          <a class="headertop__list headertop__list-view_orange" href="#">1</a>
+        </div>
+        <?} else {?>
+          <span style='color: #fff;'>Добро пожаловать,  <?echo($_SESSION['login']);?>!</span>
+          <a class="headertop__list" href="/bascet.html">Корзина</a>
+          <a class="headertop__list headertop__list-view_orange" href="#">1</a>
+        <?}?>
+        </div>
+          </div>
         </div>
       </div>
     </div>
@@ -67,11 +80,11 @@
               <div class="form__header feedback__header">Связаться с нами</div>
               <div class="form__footer">
                 <div class="flex-space">
-                  <div class="flex-column column-3"><span class="form__error">Необходимо заполнить поле</span>
+                  <div class="flex-column column-3">
                     <label class="label" for="feedback_name-modal">Ваше имя</label>
                     <input class="input feedback__width form__required" type="text" id="feedback_name-modal">
                   </div>
-                  <div class="flex-column column-3"><span class="form__error">Необходимо заполнить поле</span>
+                  <div class="flex-column column-3">
                     <label class="label" for="feedback_email-modal">Ваш email</label>
                     <input class="input form__required" type="text" id="feedback_email-modal">
                   </div>

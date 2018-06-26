@@ -1,0 +1,34 @@
+{
+    "1" : {
+        "name" : "Визитка",
+        "cost" : 0.90,
+        "description" : "качественные визитки",
+        "order" : 3,
+        "img" : "card.png",
+        "size" : "90x50"
+    },
+    "2" : {
+        "name" : "Листовка",
+        "cost" : 1,
+        "description" : "качественные визитки",
+        "order" : 2,
+        "img" : "listovki.png",
+        "size" : "148x210"
+    },
+    "3" : {
+        "name" : "Плакат",
+        "cost" : 1.2,
+        "description" : "качественные визитки",
+        "order" : 4,
+        "img" : "bukleti.png",
+        "size" : "420x597"
+    },
+    "4 " : {
+        "name" : "Буклет",
+        "cost" : 1.4,
+        "description" : "качественные визитки",
+        "order" : 1,
+        "img" : "plakat.png",
+        "size" : "210x297"
+    }
+}
