@@ -1,0 +1,37 @@
+{
+    "flaer" : {
+        "name" : "flaer",
+        "img" : "bukleti.png",
+        "size" : "99*210мм"
+    },
+    "listovka-a4" : {
+        "name" : "listovka-a4",
+        "img" : "listovki.png",
+        "size" : "210*297мм"
+    },
+    "listovka-a5" : {
+        "name" : "listovka-a5",
+        "img" : "listovki.png",
+        "size" : "148*210мм"
+    },
+    "listovka-a6" : {
+        "name" : "listovka-a6",
+        "img" : "listovki.png",
+        "size" : "105*148мм"
+    },
+    "plakat-a1" : {
+        "name" : "plakat-a1",
+        "img" : "plakat.png",
+        "size" : "420*597"
+    },
+    "plakat-a2" : {
+        "name" : "plakat-a2",
+        "img" : "plakat.png",
+        "size" : "420*594"
+    },
+    "plakat-a3" : {
+        "name" : "plakat-a3",
+        "img" : "plakat.png",
+        "size" : "420*597"
+    }
+}
