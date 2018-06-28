@@ -4,12 +4,12 @@
       <div class="headertop__social flex-space">
         <div class="social"><a class="social__link" href="#"><img class="social__pic" src="/images/vk.png" alt="vk"></a><a class="social__link" href="#"><img class="social__pic" src="/images/instagram.png" alt="instagram"></a><a class="social__link" href="#"><img class="social__pic" src="/images/facebook.png" alt="facebook"></a><a class="social__link" href="#"><img class="social__pic" src="/images/whatsapp.png" alt="whatsapp"></a></div>
         <div class="headertop__enter">
-        <? if (empty($_SESSION['login']) or empty($_SESSION['id'])) { ?>
+        <?php if (empty($_SESSION['login']) or empty($_SESSION['id'])) { ?>
           <a class="headertop__list cursor" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Регистрация</a>
           <!-- modal signup-->
           <div class="modal" id="id01">
               <div class="signup"><span class="modal__close" onclick="document.getElementById('id01').style.display='none'" title="Close Modal">&times</span>
-                <form class="form modal__content" action="">
+                <form class="form modal__content" action="main/signup" method="POST">
                   <div class="form__header signup__form-title">Регистрация</div>
                   <div class="form__footer">
                     <div class="form-row flex-column"><span class="form__error">Необходимо заполнить поле</span>
@@ -21,7 +21,7 @@
                       <input class="input form__required" name="password" type="password" id="psw">
                     </div>
                     <div class="flex-center">
-                      <button class="button button_view-action form__submit">Зарегестрировать</button>
+                      <button class="button button_view-action" type='submit'>Зарегестрировать</button>
                     </div>
                   </div>
                 </form>
@@ -52,11 +52,11 @@
           <a class="headertop__list" href="/cart">Корзина</a>
           <a class="headertop__list headertop__list-view_orange" href="#">1</a>
         </div>
-        <?} else {?>
-          <span style='color: #fff;'>Добро пожаловать,  <?echo($_SESSION['login']);?>!</span>
+        <?php } else {?>
+          <span style='color: #fff;'>Добро пожаловать,  <?php echo($_SESSION['login']);?>!</span>
           <a class="headertop__list" href="/cart">Корзина</a>
           <a class="headertop__list headertop__list-view_orange" href="#">1</a>
-        <?}?>
+        <?php }?>
         </div>
           </div>
         </div>

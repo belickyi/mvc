@@ -1,5 +1,5 @@
 //slider
-$(document).ready(function() {
+$(document).ready(function() { //запуск ф-ии когла загрузился документ
 	//slider
 	$('.js-main-slider').slick({
 		dots: false, 
@@ -30,13 +30,20 @@ if (pages[3] == '' || pages[3] == 'index.html' || pages[3] == 'main') {
 	document.getElementById('dropdown__active-button').style.color = "#fff";
 }
 
-// // GET
-// function getForm() {
-// 	alert('Hi');
-// 	$.ajax({
-// 		type: 'POST',
-// 		async: false,
-// 		url: "main/signup"
-
-// 	})
-// }
+// //GET
+// $(function() {
+// 	$('form').submit(function(e) {
+// 		var $form = $(this);
+// 		$.ajax({
+// 			type: $form.attr('method'),
+// 			url: $form.attr('action'),
+// 			data: $form.serialize()
+// 		}).done(function() {
+// 			console.log('success');
+// 		}).fail(function() {
+// 			console.log('fail');
+// 		});
+// 		//отмена действия по умолчанию для кнопки submit
+// 		e.preventDefault(); 
+// 	});
+// });

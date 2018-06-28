@@ -17,10 +17,6 @@ $(function() {
                 $(el).parent().find('.form__error').css("visibility", "hidden");
                 // Иначе скрываем поле с ошибкой
             }
-        alert('hi');        
-        
         })
-        
     })
-    
 })

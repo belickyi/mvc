@@ -1,11 +1,4 @@
-<? session_start(); 
-if (!isset($_SESSION['cart'])) {
-  $_SESSION['cart'] = array();
-} else {
-
-}
-
-?>
+<?php session_start();?>
 <!DOCTYPE html>
 <!--
 Name       : OnlinePrint
@@ -48,7 +41,6 @@ https://github.com/Belickyi
     <script src="js/main.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/calculator.js"></script>
-    <script src="js/basket.js"></script>
     <script src="js/form.js"></script>
     <script src="js/wow.min.js"></script>
 	</body>
