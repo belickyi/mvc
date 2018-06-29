@@ -5,6 +5,7 @@ class Controller_Main extends Controller
 	
 	function action_index()
 	{	
+		session_start();
 		$this->view->generate('main_view.php', 'template_view.php');
 	}
 	function action_signup() // action для регистрации пользователя на сайт
@@ -112,8 +113,10 @@ class Controller_Main extends Controller
 		else {
 			//иначе сверяем пароли
 			if ($myrow['password'] == $password) {
+				session_start();
 				$_SESSION['login'] = $myrow['login'];
 				$_SESSION['id'] = $myrow['id'];
+				header('Location:/main');
 			} else {
 				exit ("Login или пароль не существует!");
 			}
@@ -123,6 +126,7 @@ class Controller_Main extends Controller
 
 	function action_exit() // action разлогирования пользователя
 	{	
+		session_start();
 		unset($_SESSION['password']);
 		unset($_SESSION['login']); 
 		unset($_SESSION['id']);
