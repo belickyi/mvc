@@ -1,4 +1,3 @@
-<?php session_start();?>
 <!DOCTYPE html>
 <!--
 Name       : OnlinePrint
@@ -23,9 +22,6 @@ https://github.com/Belickyi
     <!-- animate css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
   </head>
 	<body class="body">
 		<!--header-->

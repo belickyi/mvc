@@ -21,7 +21,7 @@
                       <input class="input form__required" name="password" type="password" id="psw">
                     </div>
                     <div class="flex-center">
-                      <button class="button button_view-action" type='submit'>Зарегестрировать</button>
+                      <button class="button button_view-action form__submit" type='submit'>Зарегестрировать</button>
                     </div>
                   </div>
                 </form>
@@ -31,19 +31,19 @@
           <a class="headertop__list cursor" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Вход    </a>
           <div class="modal" id="id02">
             <div class="enter"><span class="modal__close" onclick="document.getElementById('id02').style.display='none'" title="Close Modal">&times</span>
-              <form class="form modal__content" action="/main/enter" method='post'>
+              <form class="form modal__content" action="/main/enter" method='POST'>
                 <div class="form__header enter__form-title">Вход</div>
                 <div class="form__footer">
-                  <div class="form-row flex-column">
-                    <label class="label" for="enter_email">Введите ваш логин</label>
-                    <input class="input form__required" type="text" name='login' required>
+                  <div class="form-row flex-column"><span class="form__error">Необходимо заполнить поле</span>
+                    <label class="label" for="enter_email">Введите ваш email</label>
+                    <input class="input form__required" type="text" name='login'>
                   </div>
-                  <div class="form-row flex-column">
+                  <div class="form-row flex-column"><span class="form__error">Необходимо заполнить поле</span>
                     <label class="label" for="psw">Введите ваш пароль</label>
-                    <input class="input form__required" type="password" name='password' required>
+                    <input class="input form__required" type="password" name='password'>
                   </div>
                   <div class="flex-center">
-                    <button class="button button_view-action modal_btn" type="submit">Войти</button>
+                    <button class="button button_view-action modal_btn form__submit" type="submit">Войти</button>
                   </div>
                 </div>
               </form>
@@ -54,6 +54,7 @@
         </div>
         <?php } else {?>
           <span style='color: #fff;'>Добро пожаловать,  <?php echo($_SESSION['login']);?>!</span>
+          <a class="headertop__list" href="/main/exit">Выход</a>
           <a class="headertop__list" href="/cart">Корзина</a>
           <a class="headertop__list headertop__list-view_orange" href="#">1</a>
         <?php }?>

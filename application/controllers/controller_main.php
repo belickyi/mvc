@@ -2,12 +2,11 @@
 
 class Controller_Main extends Controller
 {
-
+	
 	function action_index()
 	{	
 		$this->view->generate('main_view.php', 'template_view.php');
 	}
-
 	function action_signup() // action для регистрации пользователя на сайт
 	{	
 		if (isset($_POST['login'])) //заносим введенный пользователем логин в переменную $login, если он пустой, то уничтожаем переменную
@@ -27,8 +26,11 @@ class Controller_Main extends Controller
 				unset($password);
 			} 
 		}
+		// echo ($_POST['login']);
+		// echo ($_POST['password']);
+
 	
-		//если логин и пароль введены, то обрабатываем их, чтобы теги и скрипты не работали, мало ли что люди могут ввести
+		//если логин и пароль введены, то обрабатываем их, чтобы теги и скрипты не работали
 		$login = stripslashes($login);
 		$login = htmlspecialchars($login);
 		$password = stripslashes($password);
@@ -68,7 +70,7 @@ class Controller_Main extends Controller
 		{ 
 			$login = $_POST['login'];
 			if ($login == '') 
-			{ 
+			{
 				unset($login);
 			}
 		}
@@ -110,11 +112,8 @@ class Controller_Main extends Controller
 		else {
 			//иначе сверяем пароли
 			if ($myrow['password'] == $password) {
-				// если пароли совпадают, то запускаем пользователю сессию!
-				session_start();
 				$_SESSION['login'] = $myrow['login'];
 				$_SESSION['id'] = $myrow['id'];
-				header('Location:/main');
 			} else {
 				exit ("Login или пароль не существует!");
 			}
@@ -122,4 +121,11 @@ class Controller_Main extends Controller
 		}
 	}
 
+	function action_exit() // action разлогирования пользователя
+	{	
+		unset($_SESSION['password']);
+		unset($_SESSION['login']); 
+		unset($_SESSION['id']);
+		header('Location:/main');
+	}
 }
